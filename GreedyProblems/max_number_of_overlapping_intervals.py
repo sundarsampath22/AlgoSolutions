@@ -1,6 +1,5 @@
 class Solution:
     def findMinArrowShots(self, points: List[List[int]]) -> int:
-        
         sorted_intervals = sorted(points, key=lambda x: x[0])
         num_arrows = 1
         previous_interval = sorted_intervals[0]
