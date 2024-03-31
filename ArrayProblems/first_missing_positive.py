@@ -1,6 +1,7 @@
 class Solution:
     def firstMissingPositive(self, nums: List[int]) -> int:
         #cycle sort, then find the first number (positive) not in its correct position
+        #cycle sort is an unstable linear time sorting algorithm that 
         i = 0
         n = len(nums)
         while i < n:
